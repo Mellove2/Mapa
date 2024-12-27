@@ -1,30 +1,77 @@
-.topper{
+.wholepage{
+    background-color: rgb(8, 8, 9);
+    margin: 0%;
+}
+
+.navbar{ /*the nagivation bar*/ 
+   height: 65px;     
+   background-color: rgb(16, 16, 23);
+}
+
+.navbutton{
+    background-color: transparent;
+    border-radius: 10px;
+    border-style:double ;
+    border-color:  rgb(27, 27, 28);
+    height: 30px;
+    color:rgb(92, 92, 97); 
+    border-color:rgb(92, 92, 97);
+    margin-left: 80%; 
+}
+
+.topper{ /*top portion of the map*/
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+    background-image: url("./images/water.jpg");
 }
 
-image-container{
+image-container{/*this is for*/ 
     position: relative;
     width: 1000px;
     height: 500px;
 }
 
-.mapz{
+.mapz{ /*stuff for the map*/ 
     opacity: 0.5;
     display: flex;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    /*for automatic resize*/
+    max-width: 100%;
+    width: auto;
+    height: auto;
 
 }
-.overlay{
+
+.overlay{ /*this is for*/ 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     pointer-events: none;
+}
+
+.left-compare{
+    background-color: rgb(21, 20, 32);
+    color:rgb(92, 92, 97);
+
+    display: inline-block;
+    justify-content: space-between;
+    width: 30%;
+    height: 400px;
+}
+
+.right-compare{
+    background-color: rgb(21, 20, 32);
+    color:rgb(92, 92, 97);
+    
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 5%;
+    width: 30%;
+    height: 400px;
 }
